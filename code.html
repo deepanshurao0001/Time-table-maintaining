@@ -1,0 +1,237 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>BTECH SEMESTER 4 TIME TABLE</title> 
+<link rel="stylesheet" href="style.css"/> 
+</head> 
+<body> 
+<div class="container">
+<h1>BTECH SEMESTER 4 TIME TABLE</h1> 
+<div class="search-container"> 
+<div class="search-field"> 
+<label for="search-input-1">Batch:</label> 
+<input type="text" id="search-input-1" placeholder="Enter 
+Batch no." list="search-suggestions"> 
+<datalist id="search-suggestions"> 
+<option value="CS410">CS410</option> 
+<option value="CE41">CE41</option> 
+<option value="CS41">CS41</option> 
+<option value="CS42">CS42</option> 
+<option value="CS43">CS43</option> 
+<option value="CS44">CS44</option> 
+<option value="CS45">CS45</option> 
+<option value="CS46">CS46</option> 
+<option value="CS47">CS47</option> 
+<option value="CS48">CS48</option> 
+<option value="CS49">CS49</option> 
+<option value="EC42">EC41</option> 
+<option value="EM41">EM41</option> 
+<option value="CSM">CSM</option> 
+<option value="BIM">BIM</option> 
+<option value="BI41">BI41</option> 
+<option value="BT41">BT41</option> 
+<option value="IT41">IT41</option> 
+<option value="IT42">IT42</option> 
+</datalist> 
+<button 
+onclick="searchTable('search-input-1')">Search</button>
+</div> 
+<div class="search-field"> 
+<label for="search-input-2">Faculty: </label> 
+<input type="text" id="search-input-2" placeholder="Enter 
+Faculty" list="search-suggestions-2"> 
+<datalist id="search-suggestions-2"> 
+<option value="RJK">RJK</option> 
+<option value="RRA">RRA</option> 
+<option value="PKG">PKG</option> 
+<option value="BKP">BKP</option> 
+<option value="TGM">TGM</option> 
+<option value="UDB">UDB</option> 
+<option value="NTJ">NTJ</option> 
+<option value="PKP">PKP</option> 
+<option value="NJP">NJP</option> 
+<option value="TTS">TTS</option> 
+<option value="CGP">CGP</option> 
+<option value="SDS">SDS</option> 
+<option value="JTV">JTV</option> 
+<option value="DHA">DHA</option> 
+<option value="MBI">MBI</option> 
+<option value="ASA">ASA</option> 
+<option value="PTK">PTK</option> 
+<option value="PDG">PDG</option> 
+<option value="AMN">AMN</option> 
+<option value="SGL">SGL</option> 
+<option value="SWT">SWT</option> 
+<option value="SML">SML</option> 
+<option value="SST">SST</option>
+<option value="RKU">RKU</option> 
+<option value="PNS">PNS</option> 
+<option value="RRA">RRA</option> 
+<option value="RKI">RKI</option> 
+<option value="HRI">HRI</option> 
+<option value="SHR">SHR</option> 
+<option value="SLD">SLD</option> 
+<option value="NFK">NFK</option> 
+<option value="AKJ">AKJ</option> 
+<option value="ALK">ALK</option> 
+<option value="NVN">NVN</option> 
+<option value="VKB">VKB</option> 
+<option value="EMP">EMP</option> 
+<option value="PKR">PKR</option> 
+</datalist> 
+<button 
+onclick="searchTable('search-input-2')">Search</button> 
+</div> 
+<div class="search-field"> 
+<label for="search-input-3">Subject Code: </label> 
+<input type="text" id="search-input-3" placeholder="Enter 
+Subject code" list="search-suggestions-3"> 
+<datalist id="search-suggestions-3"> 
+<option value="P-18B17CI474">P-18B17CI474 </option> 
+<option value="P-18B17CI473">P-18B17CI473</option> 
+<option value="P-18B17CI471">P-18B17CI471</option> 
+<option value="P-18B17CI472">P-18B17CI472</option> 
+<option value="-18B17EC371">P-18B17EC371</option> 
+<option value="L-18B11CI414">L-L-18B11CI414</option>
+<option value="L-18B11EC413">L-18B11EC413</option> 
+<option value="L-18B11MA411 ">L-18B11MA411</option> 
+<option value="L-18B11MA413 ">L-18B11MA413</option> 
+<option value="P-18B17BT474">P-18B17BT474</option> 
+<option value="T-20B11EM412 ">T-20B11EM412 </option> 
+<option value="T-18B11BT413">T-18B11BT413</option> 
+<option value="L-18B11EC411">L-18B11EC411</option> 
+<option value="L-18B11HS411">L-18B11HS411</option> 
+<option value="L-20B11EM411">L-20B11EM411</option> 
+<option value="P-20B17EM472">P-20B17EM472</option> 
+<option value="L-18B11CI411">L-18B11CI411</option> 
+<option value="T-18B11CI413">T-18B11CI413</option> 
+<option value="T-18B11CI415">T-18B11CI415</option> 
+<option value="L-18B11CE415">L-18B11CE415</option> 
+<option value="L-18B11BT412">L-18B11BT412</option> 
+<option value="L-18B11BT411">L-18B11BT411</option> 
+<option value="L-18B11CE411">L-18B11CE411</option> 
+<option value="L-18B11CE414">L-18B11CE414</option> 
+<option value="L-18B11BI412">L-18B11BI414</option> 
+<option value="L-18B11BI411">L-18B11BI413</option> 
+</datalist> 
+<button 
+onclick="searchTable('search-input-3')">Search</button> 
+</div> 
+<div class="search-field"> 
+<label for="search-input-4">Classroom: </label> 
+<input type="text" id="search-input-4" placeholder="Enter 
+Classroom" list="search-suggestions-4"> 
+<datalist id="search-suggestions-4">
+<option value="CR1">CR1</option> <option value="CR2">CR2</option> <option value="CR3">CR3</option> <option value="CR4">CR4</option> <option value="CR5">CR5</option> <option value="CR6">CR6</option> <option value="CR7">CR7</option> <option value="CR8">CR8</option> <option value="CR9">CR9</option> <option value="CR10">CR10</option> 
+<option value="CR11">CR11</option> <option value="CR12">CR12</option> <option value="CR13">CR13</option> <option value="CR14">CR14</option> <option value="CR15">CR15</option> <option value="CL1">CL1</option> 
+<option value="CL2">CL2</option> <option value="CL3">CL3</option> <option value="CL4">CL4</option> <option value="CL5">CL5</option> <option value="CL6">CL6</option> <option value="CL7">CL7</option> <option value="CL8">CL8</option> <option value="CL9">CL9</option> <option value="CL10">CL10</option> 
+<option value="TR1">TR1</option> <option value="TR2">TR2</option> <option value="TR3">TR3</option>
+<option value="TR4">TR4</option> 
+<option value="TR5">TR5</option> 
+<option value="TR6">TR6</option> 
+<option value="TR7">TR7</option> 
+<option value="LT1">LT1</option> 
+<option value="LT2">LT2</option> 
+<option value="LT3">LT3</option> 
+</datalist> 
+<button 
+onclick="searchTable('search-input-4')">Search</button> 
+</div> 
+</div> 
+<div id="table-container" style="text-align: left;"></div> 
+</div> 
+<script 
+src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></sc ript> 
+<script src="script.js"></script> 
+</body> 
+</html> 
+CSS: 
+table { 
+border-collapse: collapse; 
+width: 100%; 
+} 
+th, td { 
+border: 1px solid #6f18d1; 
+padding: 8px;
+text-align: center; 
+} 
+th { 
+background-color: rgba(14, 96, 3, 0.685); color: white; 
+padding: 4px; 
+} 
+title { 
+text-align: center; 
+} 
+body { 
+background-color: yellow; 
+} 
+button { 
+background-color: rebeccapurple; 
+text-indent: 5px; 
+padding: 4px; 
+align-items: end; 
+} 
+#search-input { 
+margin-bottom: 10px; 
+padding: 5px; 
+width: 100px; 
+border: 10px solid #ddd; 
+border-radius: 3px; 
+background-color: aqua; 
+}
+JAVA SCRIPT: 
+var excelUrl = "BTECH_4_sem.xlsx"; 
+var xhr = new XMLHttpRequest(); 
+xhr.open('GET', excelUrl, true); 
+xhr.responseType = 'arraybuffer'; 
+xhr.onload = function(e) { 
+if (xhr.status == 200) { 
+var data = new Uint8Array(xhr.response); 
+var workbook = XLSX.read(data, {type: 'array'}); 
+var sheet = workbook.Sheets[workbook.SheetNames[0]]; 
+var rows = XLSX.utils.sheet_to_json(sheet, {header: 1}); 
+var tableHtml = '<table class="my-table" style="border-collapse: collapse; border: 1px solid black;">'; 
+tableHtml += '<thead><tr style="border: 1px solid black;">'; for (var i = 0; i < rows[0].length; i++) { 
+tableHtml += '<th style="border: 1px solid black;">' + rows[0][i] + '</th>'; 
+} 
+tableHtml += '</tr></thead><tbody>'; 
+for (var i = 1; i < rows.length; i++) { 
+tableHtml += '<tr class="trClass" style="border: 1px solid black;">'; 
+for (var j = 0; j < rows[i].length; j++) { 
+if(rows[i][0] === undefined) 
+{
+rows[i][0] = rows[i-1][0]; 
+} 
+var cellValue = rows[i][j]; 
+if (cellValue === undefined) { 
+cellValue = ''; 
+} 
+tableHtml += '<td class="tdClass" style="border: 1px solid black;">' + cellValue + '</td>'; 
+} 
+} 
+tableHtml += '</tr>'; 
+} 
+tableHtml += '</tbody></table>'; 
+document.getElementById('table-container').innerHTML = tableHtml; }; 
+xhr.send(); 
+function searchTable(inputId) { 
+var input, filter, table, tr, td, i, j, txtValue; 
+input = document.getElementById(inputId); 
+filter = input.value.toUpperCase(); 
+table = document.getElementsByTagName("table")[0]; 
+tr = table.getElementsByTagName("tr"); 
+for (i = 0; i < tr.length; i++) { 
+td = tr[i].getElementsByTagName("td"); 
+for (j = 0; j < td.length; j++) { 
+txtValue = td[j].textContent || td[j].innerText; 
+if (j === 0) { 
+td[j].style.display = "";
+} else if (txtValue.toUpperCase().indexOf(filter) > -1) { td[j].style.display = ""; 
+} else if (j>0 && txtValue.toUpperCase().indexOf(filter) == -1) { 
+td[j].textContent = ""; 
+}else{ 
+td[j].style.display = "none"; 
+} 
+} 
+} 
+}
